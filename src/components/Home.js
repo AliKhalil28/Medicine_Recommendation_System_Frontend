@@ -13,7 +13,7 @@ const Home = (props) => {
     e.preventDefault();
   
     // Format the symptoms: convert to lowercase and replace spaces with underscores
-    const formattedSymptoms = symptoms.toLowerCase().replace(/ /g, "_");
+    const formattedSymptoms = symptoms.toLowerCase().trim().replace(/\s*,\s*/g, ",").replace(/ /g, "_");
   
     try {
       const response = await fetch("https://medicine-recommendation-system-backend.onrender.com/predict", {
