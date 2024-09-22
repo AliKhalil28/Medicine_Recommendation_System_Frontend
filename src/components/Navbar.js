@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/logo.jpg';
+import logo from '../images/logo.jpeg';
 import '../App.css';
 // import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
@@ -23,7 +23,7 @@ export default function Navbar(props) {
                         <NavLink className="nav-link" to="/" activeclassname="active" aria-current="page" >Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/about" activeclassname="active">About</NavLink>
+                        <NavLink className="nav-link" to="/about" activeclassname="active">About Us</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/services" activeclassname="active">Services</NavLink>
@@ -32,7 +32,7 @@ export default function Navbar(props) {
                         <NavLink className="nav-link" to="/guide" activeclassname="active">Guide</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/contact" activeclassname="active">Contact</NavLink>
+                        <NavLink className="nav-link" to="/contact" activeclassname="active">Contact Us</NavLink>
                     </li>
                 </ul>
                     {/* Dark Mode Toggle Switch */}

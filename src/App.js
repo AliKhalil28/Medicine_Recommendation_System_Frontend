@@ -44,17 +44,17 @@ function Main() {
   const getTitle = (path) => {
     switch (path) {
       case '/':
-        return 'Home - Medicine Recommendation System';
+        return 'Home - MedInsight';
       case '/about':
-        return 'About Us - Medicine Recommendation System';
+        return 'About Us - MedInsight';
       case '/services':
-        return 'Our Services - Medicine Recommendation System';
+        return 'Our Services - MedInsight';
       case '/guide':
-        return 'Guide - Medicine Recommendation System';
+        return 'Guide - MedInsight';
       case '/contact':
-        return 'Contact Us - Medicine Recommendation System';
+        return 'Contact Us - MedInsight';
       default:
-        return 'Medicine Recommendation System';
+        return 'MedInsight';
     }
   };
 
