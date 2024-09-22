@@ -1,0 +1,36 @@
+/* Container that positions the loading bar below the navbar */
+.loading-container {
+    position: fixed;
+    top: 50px; /* Adjust based on your navbar height */
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: transparent;
+  }
+  
+  /* The loading bar */
+  .loading-bar {
+    height: 4px;
+    background-color: #007bff; /* Adjust color as needed */
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease-out; /* Ensure transition is smooth */
+  }
+  
+  /* Keyframes for loading bar animation */
+  @keyframes loadingAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Animation class that triggers forward movement */
+  .loading-bar.loading {
+    animation: loadingAnimation 1s forwards; /* Adjust duration as needed */
+  }
+  
