@@ -16,7 +16,7 @@ const Home = (props) => {
     const formattedSymptoms = symptoms.toLowerCase().replace(/ /g, "_");
   
     try {
-      const response = await fetch("https://medicine-recommendation-system-backend.onrender.com", {
+      const response = await fetch("https://medicine-recommendation-system-backend.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ symptoms: formattedSymptoms }),
