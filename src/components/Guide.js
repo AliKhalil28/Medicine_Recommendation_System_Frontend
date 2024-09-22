@@ -34,202 +34,203 @@ export default function Guide() {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>abdominal_pain</td>
-                            <td>abnormal_menstruation</td>
-                            <td>acidity</td>
-                            <td>acute_liver_failure</td>
+                            <td>Abdominal Pain</td>
+                            <td>Abnormal Menstruation</td>
+                            <td>Acidity</td>
+                            <td>Acute Liver Failure</td>
                         </tr>
                         <tr>
-                            <td>altered_sensorium</td>
-                            <td>anxiety</td>
-                            <td>back_pain</td>
-                            <td>belly_pain</td>
+                            <td>Altered Sensorium</td>
+                            <td>Anxiety</td>
+                            <td>Back Pain</td>
+                            <td>Belly Pain</td>
                         </tr>
                         <tr>
-                            <td>blackheads</td>
-                            <td>bladder_discomfort</td>
-                            <td>blister</td>
-                            <td>blood_in_sputum</td>
+                            <td>Blackheads</td>
+                            <td>Bladder Discomfort</td>
+                            <td>Blister</td>
+                            <td>Blood In Sputum</td>
                         </tr>
                         <tr>
-                            <td>bloody_stool</td>
-                            <td>blurred_and_distorted_vision</td>
-                            <td>brittle_nails</td>
-                            <td>bruising</td>
+                            <td>Bloody Stool</td>
+                            <td>Blurred And Distorted Vision</td>
+                            <td>Brittle Nails</td>
+                            <td>Bruising</td>
                         </tr>
                         <tr>
-                            <td>burning_micturition</td>
-                            <td>chest_pain</td>
-                            <td>chills</td>
-                            <td>coma</td>
+                            <td>Burning Micturition</td>
+                            <td>Chest Pain</td>
+                            <td>Chills</td>
+                            <td>Coma</td>
                         </tr>
                         <tr>
-                            <td>congestion</td>
-                            <td>constipation</td>
-                            <td>continuous_feel_of_urine</td>
-                            <td>continuous_sneezing</td>
+                            <td>Congestion</td>
+                            <td>Constipation</td>
+                            <td>Continuous Feel Of Urine</td>
+                            <td>Continuous Sneezing</td>
                         </tr>
                         <tr>
-                            <td>cramps</td>
-                            <td>cough</td>
-                            <td>dark_urine</td>
-                            <td>dehydration</td>
+                            <td>Cramps</td>
+                            <td>Cough</td>
+                            <td>Dark Urine</td>
+                            <td>Dehydration</td>
                         </tr>
                         <tr>
-                            <td>depression</td>
-                            <td>diarrhoea</td>
-                            <td>dischromic_patches</td>
-                            <td>distention_of_abdomen</td>
+                            <td>Depression</td>
+                            <td>Diarrhoea</td>
+                            <td>Dichromic Patches</td>
+                            <td>Distention Of Abdomen</td>
                         </tr>
                         <tr>
-                            <td>dizziness</td>
-                            <td>drying_and_tingling_lips</td>
-                            <td>enlarged_thyroid</td>
-                            <td>excessive_hunger</td>
+                            <td>Dizziness</td>
+                            <td>Drying And Tingling Lips</td>
+                            <td>Enlarged Thyroid</td>
+                            <td>Excessive Hunger</td>
                         </tr>
                         <tr>
-                            <td>extra_marital_contacts</td>
-                            <td>family_history</td>
-                            <td>fast_heart_rate</td>
-                            <td>fatigue</td>
+                            <td>Extra Marital Contacts</td>
+                            <td>Family History</td>
+                            <td>Fast Heart Rate</td>
+                            <td>Fatigue</td>
                         </tr>
                         <tr>
-                            <td>fluid_overload</td>
-                            <td>fluid_overload.1</td>
-                            <td>foul_smell_of_urine</td>
-                            <td>headache</td>
+                            <td>Fluid Overload</td>
+                            <td>Fluid Overload</td>
+                            <td>Foul Smell Of Urine</td>
+                            <td>Headache</td>
                         </tr>
                         <tr>
-                            <td>high_fever</td>
-                            <td>hip_joint_pain</td>
-                            <td>history_of_alcohol_consumption</td>
-                            <td>indigestion</td>
+                            <td>High Fever</td>
+                            <td>Hip Joint Pain</td>
+                            <td>History Of Alcohol Consumption</td>
+                            <td>Indigestion</td>
                         </tr>
                         <tr>
-                            <td>increased_appetite</td>
-                            <td>inflammatory_nails</td>
-                            <td>internal_itching</td>
-                            <td>irregular_sugar_level</td>
+                            <td>Increased Appetite</td>
+                            <td>Inflammatory Nails</td>
+                            <td>Internal Itching</td>
+                            <td>Irregular Sugar Level</td>
                         </tr>
                         <tr>
-                            <td>irritability</td>
-                            <td>irritation_in_anus</td>
-                            <td>itching</td>
-                            <td>joint_pain</td>
+                            <td>Irritability</td>
+                            <td>Irritation In Anus</td>
+                            <td>Itching</td>
+                            <td>Joint Pain</td>
                         </tr>
                         <tr>
-                            <td>knee_pain</td>
-                            <td>lack_of_concentration</td>
-                            <td>lethargy</td>
-                            <td>loss_of_appetite</td>
+                            <td>Knee Pain</td>
+                            <td>Lack Of Concentration</td>
+                            <td>Lethargy</td>
+                            <td>Loss Of Appetite</td>
                         </tr>
                         <tr>
-                            <td>loss_of_balance</td>
-                            <td>loss_of_smell</td>
-                            <td>malaise</td>
-                            <td>mild_fever</td>
+                            <td>Loss Of Balance</td>
+                            <td>Loss Of Smell</td>
+                            <td>Malaise</td>
+                            <td>Mild Fever</td>
                         </tr>
                         <tr>
-                            <td>mood_swings</td>
-                            <td>movement_stiffness</td>
-                            <td>mucoid_sputum</td>
-                            <td>muscle_pain</td>
+                            <td>Mood Swings</td>
+                            <td>Movement Stiffness</td>
+                            <td>Mucoid Sputum</td>
+                            <td>Muscle Pain</td>
                         </tr>
                         <tr>
-                            <td>muscle_wasting</td>
-                            <td>muscle_weakness</td>
-                            <td>nausea</td>
-                            <td>neck_pain</td>
+                            <td>Muscle Wasting</td>
+                            <td>Muscle Weakness</td>
+                            <td>Nausea</td>
+                            <td>Neck Pain</td>
                         </tr>
                         <tr>
-                            <td>nodal_skin_eruptions</td>
-                            <td>obesity</td>
-                            <td>pain_behind_the_eyes</td>
-                            <td>pain_during_bowel_movements</td>
+                            <td>Nodal Skin Eruptions</td>
+                            <td>Obesity</td>
+                            <td>Pain Behind The Eyes</td>
+                            <td>Pain During Bowel Movements</td>
                         </tr>
                         <tr>
-                            <td>pain_in_anal_region</td>
-                            <td>painful_walking</td>
-                            <td>palpitations</td>
-                            <td>passage_of_gases</td>
+                            <td>Pain In Anal Region</td>
+                            <td>Painful Walking</td>
+                            <td>Palpitations</td>
+                            <td>Passage Of Gases</td>
                         </tr>
                         <tr>
-                            <td>patches_in_throat</td>
-                            <td>phlegm</td>
-                            <td>polyuria</td>
-                            <td>prominent_veins_on_calf</td>
+                            <td>Patches In Throat</td>
+                            <td>Phlegm</td>
+                            <td>Polyuria</td>
+                            <td>Prominent Veins On Calf</td>
                         </tr>
                         <tr>
-                            <td>puffy_face_and_eyes</td>
-                            <td>pus_filled_pimples</td>
-                            <td>receiving_blood_transfusion</td>
-                            <td>receiving_unsterile_injections</td>
+                            <td>Puffy Face And Eyes</td>
+                            <td>Pus Filled Pimples</td>
+                            <td>Receiving Blood Transfusion</td>
+                            <td>Receiving Unsterile Injections</td>
                         </tr>
                         <tr>
-                            <td>red_sore_around_nose</td>
-                            <td>red_spots_over_body</td>
-                            <td>redness_of_eyes</td>
-                            <td>restlessness</td>
+                            <td>Red Sore Around Nose</td>
+                            <td>Red Spots Over Body</td>
+                            <td>Redness Of Eyes</td>
+                            <td>Restlessness</td>
                         </tr>
                         <tr>
-                            <td>runny_nose</td>
-                            <td>rusty_sputum</td>
-                            <td>scurring</td>
-                            <td>shivering</td>
+                            <td>Runny Nose</td>
+                            <td>Rusty Sputum</td>
+                            <td>Scurring</td>
+                            <td>Shivering</td>
                         </tr>
                         <tr>
-                            <td>silver_like_dusting</td>
-                            <td>sinus_pressure</td>
-                            <td>skin_peeling</td>
-                            <td>skin_rash</td>
+                            <td>Silver Like Dusting</td>
+                            <td>Sinus Pressure</td>
+                            <td>Skin Peeling</td>
+                            <td>Skin Rash</td>
                         </tr>
                         <tr>
-                            <td>slurred_speech</td>
-                            <td>small_dents_in_nails</td>
-                            <td>spinning_movements</td>
-                            <td>spotting_urination</td>
+                            <td>Slurred Speech</td>
+                            <td>Small Dents In Nails</td>
+                            <td>Spinning Movements</td>
+                            <td>Spotting Urination</td>
                         </tr>
                         <tr>
-                            <td>stiff_neck</td>
-                            <td>stomach_bleeding</td>
-                            <td>stomach_pain</td>
-                            <td>sunken_eyes</td>
+                            <td>Stiff Neck</td>
+                            <td>Stomach Bleeding</td>
+                            <td>Stomach Pain</td>
+                            <td>Sunken Eyes</td>
                         </tr>
                         <tr>
-                            <td>sweating</td>
-                            <td>swelled_lymph_nodes</td>
-                            <td>swelling_joints</td>
-                            <td>swelling_of_stomach</td>
+                            <td>Sweating</td>
+                            <td>Swelled Lymph Nodes</td>
+                            <td>Swelling Joints</td>
+                            <td>Swelling Of Stomach</td>
                         </tr>
                         <tr>
-                            <td>swollen_blood_vessels</td>
-                            <td>swollen_extremeties</td>
-                            <td>swollen_legs</td>
-                            <td>throat_irritation</td>
+                            <td>Swollen Blood Vessels</td>
+                            <td>Swollen Extremities</td>
+                            <td>Swollen Legs</td>
+                            <td>Throat Irritation</td>
                         </tr>
                         <tr>
-                            <td>toxic_look_(typhos)</td>
-                            <td>ulcers_on_tongue</td>
-                            <td>unsteadiness</td>
-                            <td>visual_disturbances</td>
+                            <td>Toxic Look (Typhos)</td>
+                            <td>Ulcers On Tongue</td>
+                            <td>Unsteadiness</td>
+                            <td>Visual Disturbances</td>
                         </tr>
                         <tr>
-                            <td>vomiting</td>
-                            <td>watering_from_eyes</td>
-                            <td>weakness_in_limbs</td>
-                            <td>weakness_of_one_body_side</td>
+                            <td>Vomiting</td>
+                            <td>Watering From Eyes</td>
+                            <td>Weakness In Limbs</td>
+                            <td>Weakness Of One Body Side</td>
                         </tr>
                         <tr>
-                            <td>weight_gain</td>
-                            <td>weight_loss</td>
-                            <td>yellow_crust_ooze</td>
-                            <td>yellow_urine</td>
+                            <td>Weight Gain</td>
+                            <td>Weight Loss</td>
+                            <td>Yellow Crust Ooze</td>
+                            <td>Yellow Urine</td>
                         </tr>
                         <tr>
-                            <td>yellowing_of_eyes</td>
-                            <td>yellowish_skin</td>
+                            <td>Yellowing Of Eyes</td>
+                            <td>Yellowish Skin</td>
                         </tr>
                     </tbody>
+
 
 
                 </table>
