@@ -85,20 +85,20 @@ export default function Contact() {
       <div className="container-wrapper">
         <div className="contact-info">
           <h4 className="mb-4">Contact Information</h4>
-          <p><i className="fas fa-map-marker-alt"></i> Location: 123 Health St, Wellness City</p>
-          <p><i className="fas fa-phone-alt"></i> Phone: +123 456 7890</p>
-          <p><i className="fas fa-envelope"></i> Email: info@medai.com</p>
-          <p><i className="fas fa-globe"></i> Website: www.medai.com</p>
+          <p><i className="fas fa-map-marker-alt"></i> Superior College Mian Channu</p>
+          <p><i className="fas fa-phone-alt"></i> Phone: +923060435245 || +923156463904</p>
+          <p><i className="fas fa-envelope"></i> Email: ak126pk@gmail.com</p>
+          <p><i className="fas fa-globe"></i> Website: www.aktech.com</p>
 
           <h4 className="mt-4">Get in touch with us!</h4>
           <p style={{ fontSize: '16px' }}> We're always here to provide answers.</p>
 
           <div className="social-media">
             <h6>Follow Us</h6>
-            <i className="fab fa-facebook"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-linkedin"></i>
-            <i className="fab fa-instagram"></i>
+            <a href="https://www.facebook.com/ali.khalil.26/"><i className="fab fa-facebook"></i></a>
+            <a href=""><i className="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/ali-khalil-753469285/"><i className="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/ali.khalil.26/?hl=en"><i className="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
