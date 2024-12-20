@@ -47,6 +47,7 @@ function Main() {
       loadingBarRef.current.complete();
     }, 1000);
     return () => clearTimeout(timer);
+    // eslint-disable-next-line
   }, [location.pathname]);
 
   return (

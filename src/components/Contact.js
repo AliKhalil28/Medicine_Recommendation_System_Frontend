@@ -164,18 +164,25 @@ export default function Contact() {
             <div className="contact-info">
               <h4 className="mb-4">Contact Information</h4>
               <p>
-                <i className="fas fa-map-marker-alt"></i> Superior College Mian
-                Channu
+                <i className="fas fa-map-marker-alt"></i> Mian Channu Pakistan
               </p>
               <p>
-                <i className="fas fa-phone-alt"></i> Phone: +923060435245 ||
-                +923156463904
+                <i className="fas fa-phone-alt"></i> Phone: +923060435245
               </p>
               <p>
                 <i className="fas fa-envelope"></i> Email: ak126pk@gmail.com
               </p>
+
               <p>
-                <i className="fas fa-globe"></i> Website: www.codewithali.info
+                <i className="fas fa-globe"></i> Website:{" "}
+                <Link
+                  to="https://www.codewithali.info"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                >
+                  www.codewithali.info
+                </Link>
               </p>
 
               <h4 className="mt-4">Get in touch with us!</h4>
@@ -186,16 +193,28 @@ export default function Contact() {
 
               <div className="social-media">
                 <h6>Follow Us</h6>
-                <Link to="https://www.facebook.com/ali.khalil.26/">
+                <Link
+                  to="https://www.facebook.com/ali.khalil.26/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-facebook"></i>
                 </Link>
                 <Link to="">
                   <i className="fab fa-twitter"></i>
                 </Link>
-                <Link to="https://www.linkedin.com/in/ali-khalil-753469285/">
+                <Link
+                  to="https://www.linkedin.com/in/ali-khalil-753469285/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-linkedin"></i>
                 </Link>
-                <Link to="https://www.instagram.com/ali.khalil.26/?hl=en">
+                <Link
+                  to="https://www.instagram.com/ali.khalil.26/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-instagram"></i>
                 </Link>
               </div>
