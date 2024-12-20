@@ -11,31 +11,52 @@ const Home = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     // Format the symptoms: convert to lowercase and replace spaces with underscores
-    const formattedSymptoms = symptoms.toLowerCase().trim().replace(/\s*,\s*/g, ",").replace(/ /g, "_");
-  
+    const formattedSymptoms = symptoms
+      .toLowerCase()
+      .trim()
+      .replace(/\s*,\s*/g, ",")
+      .replace(/ /g, "_");
+
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ symptoms: formattedSymptoms }),
-      });
-  
+      props.loadingBarRef.current.continuousStart();
+      props.showAlert("Getting data from server...", "primary");
+      const response = await fetch(
+        "https://medicine-recommendation-system-backend.onrender.com/predict",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ symptoms: formattedSymptoms }),
+        }
+      );
+
       if (!response.ok) {
         // If the response is not ok, show an alert with the error message
-        props.showAlert("Error: Incorrect symptoms or no valid response from the server. Please check your input.", "danger");
+        props.showAlert(
+          "Error: Incorrect symptoms or no valid response from the server. Please check your input.",
+          "danger"
+        );
+
+        props.loadingBarRef.current.complete();
         return;
       }
-  
+
       const data = await response.json();
-  
+
+      props.loadingBarRef.current.complete();
+      props.showAlert("Success: Data loaded Sucessfully", "success");
+
       // Check if the response contains the necessary data
       if (data.error || !data.predicted_disease) {
-        props.showAlert("Error: Incorrect symptoms or no valid response from the server. Please check your input.", "danger");
+        props.showAlert(
+          "Error: Incorrect symptoms or no valid response from the server. Please check your input.",
+          "danger"
+        );
+        props.loadingBarRef.current.complete();
         return;
       }
-  
+
       // Set the data in the state if the response is successful
       setPredictedDisease(data.predicted_disease);
       setDisDes(data.dis_des);
@@ -43,17 +64,20 @@ const Home = (props) => {
       setMyDiet(data.my_diet);
       setMedications(data.medications);
       setMyPrecautions(data.my_precautions);
-  
     } catch (error) {
       // Handle network or other errors
-      props.showAlert("Error: Something went wrong. Please try again later.", "danger");
+      props.showAlert(
+        "Error: Something went wrong. Please try again later.",
+        "danger"
+      );
+      props.loadingBarRef.current.complete();
     }
   };
 
   return (
     <div>
       <h3 className="mt-4" style={{ textAlign: "center" }}>
-      MedInsight - Medicine Recommendation System
+        MedInsight - Medicine Recommendation System
       </h3>
 
       <div className="container mt-5">

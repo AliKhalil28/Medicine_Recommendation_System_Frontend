@@ -1,94 +1,78 @@
-import './App.css';
-import React, {useState} from 'react'
-import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation  } from 'react-router-dom';
-import Home from './components/Home';
-import Services from './components/Services';
-import Guide from './components/Guide';
-import Contact from './components/Contact';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Footer from './components/Footer';
-import LoadingBar from './components/LoadingBar';
-import Alert from './components/Alert';
-
-
+import "./App.css";
+import LoadingBar from "react-top-loading-bar";
+import React, { useRef, useState } from "react";
+import { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import Home from "./components/Home";
+import Services from "./components/Services";
+import Guide from "./components/Guide";
+import Contact from "./components/Contact";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Alert from "./components/Alert";
 
 function Main() {
-  // const [mode, setMode] = useState('light');
-
-  // const toggleMode = () => {
-  //   if (mode === 'light') {
-  //     setMode('dark')
-  //     document.body.style.backgroundColor = '#343a40';
-  // }
-  // else {
-  //   setMode('light')
-  //   document.body.style.backgroundColor = 'white';
-  // }
-  // }
-
   const [alert, setAlert] = useState(null);
+  const loadingBarRef = useRef(null);
+  const location = useLocation();
 
-  const showAlert = (message, type) =>{
-    setAlert({
-      msg : message,
-      type : type
-    })
-    setTimeout(() => {
-      setAlert(null)
-    }, 2000);
-  }
-
-  const getTitle = (path) => {
-    switch (path) {
-      case '/':
-        return 'Home - MedInsight';
-      case '/about':
-        return 'About Us - MedInsight';
-      case '/services':
-        return 'Our Services - MedInsight';
-      case '/guide':
-        return 'Guide - MedInsight';
-      case '/contact':
-        return 'Contact Us - MedInsight';
-      default:
-        return 'MedInsight';
-    }
+  const titles = {
+    "/": "Home - MedInsight",
+    "/about": "About Us - MedInsight",
+    "/services": "Our Services - MedInsight",
+    "/guide": "Guide - MedInsight",
+    "/contact": "Contact Us - MedInsight",
   };
 
-  
-    const location = useLocation();
-  
-    useEffect(() => {
-      const title = getTitle(location.pathname);
-      document.title = title;
-    }, [location.pathname]);
+  const getTitle = (path) => titles[path] || "MedInsight";
 
-    return(
+  const showAlert = (message, type) => {
+    if (alert?.msg === message && alert?.type === type) return;
+    setAlert({ msg: message, type: type });
+    setTimeout(() => setAlert(null), 2000);
+  };
+
+  useEffect(() => {
+    const title = getTitle(location.pathname);
+    document.title = title;
+    loadingBarRef.current.continuousStart();
+    const timer = setTimeout(() => {
+      loadingBarRef.current.complete();
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  return (
     <>
-      
-      <Navbar 
-      //mode={mode} 
-      //toggleMode={toggleMode} 
-      />
-      <LoadingBar /> 
+      <Navbar />
+      <LoadingBar color="#007bff" ref={loadingBarRef} height={3} />
       <Alert alert={alert} />
       <div className="main-content">
         <Routes>
-          <Route path="/" element={<Home showAlert = {showAlert}/>} />
+          <Route
+            path="/"
+            element={
+              <Home showAlert={showAlert} loadingBarRef={loadingBarRef} />
+            }
+          />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<div>Page Not Found</div>} />
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
     </>
-    );
-  }
-
+  );
+}
 
 const App = () => {
   return (
@@ -96,6 +80,6 @@ const App = () => {
       <Main />
     </Router>
   );
-}
+};
 
 export default App;
