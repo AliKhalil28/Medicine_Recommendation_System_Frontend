@@ -200,8 +200,8 @@ export default function Contact() {
                 >
                   <i className="fab fa-facebook"></i>
                 </Link>
-                <Link to="">
-                  <i className="fab fa-twitter"></i>
+                <Link to="https://github.com/AliKhalil28">
+                  <i className="fab fa-github"></i>
                 </Link>
                 <Link
                   to="https://www.linkedin.com/in/ali-khalil-753469285/"
