@@ -115,7 +115,6 @@ export default function About() {
                 src={sec3Image}
                 alt="About Us"
                 className="about-image img-fluid"
-                style={{ height: "340px" }}
               />
             </div>
             <div className="col-md-6 about-text">
