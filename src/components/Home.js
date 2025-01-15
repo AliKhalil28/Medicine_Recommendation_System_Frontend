@@ -21,7 +21,7 @@ const Home = (props) => {
 
     try {
       props.loadingBarRef.current.continuousStart();
-      props.showAlert("Getting data from server...", "primary");
+      props.setAlert({ msg: "Getting data from server...", type: "primary" });
       const response = await fetch(
         "https://medicine-recommendation-system-backend.onrender.com/predict",
         {
@@ -30,6 +30,7 @@ const Home = (props) => {
           body: JSON.stringify({ symptoms: formattedSymptoms }),
         }
       );
+      props.setAlert(null);
 
       if (!response.ok) {
         // If the response is not ok, show an alert with the error message

@@ -60,7 +60,11 @@ function Main() {
           <Route
             path="/"
             element={
-              <Home showAlert={showAlert} loadingBarRef={loadingBarRef} />
+              <Home
+                showAlert={showAlert}
+                setAlert={setAlert}
+                loadingBarRef={loadingBarRef}
+              />
             }
           />
           <Route path="/about" element={<About />} />
