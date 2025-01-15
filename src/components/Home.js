@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
 const Home = (props) => {
   const [symptoms, setSymptoms] = useState("");
@@ -8,6 +8,8 @@ const Home = (props) => {
   const [myDiet, setMyDiet] = useState([]);
   const [medications, setMedications] = useState([]);
   const [myPrecautions, setMyPrecautions] = useState([]);
+
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,6 +22,7 @@ const Home = (props) => {
       .replace(/ /g, "_");
 
     try {
+      setPredictedDisease(null);
       props.loadingBarRef.current.continuousStart();
       props.setAlert({ msg: "Getting data from server...", type: "primary" });
       const response = await fetch(
