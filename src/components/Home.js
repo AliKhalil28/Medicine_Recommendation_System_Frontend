@@ -84,6 +84,9 @@ const Home = (props) => {
       <h3 className="mt-4" style={{ textAlign: "center" }}>
         MedInsight - Medicine Recommendation System
       </h3>
+      <div className="text-center text-danger">
+        Visit Guide page to use this accurately
+      </div>
 
       <div className="container mt-5">
         <div className="row justify-content-center">
