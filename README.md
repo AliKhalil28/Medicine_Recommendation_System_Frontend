@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# **MedInsight - Frontend**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MedInsight is a **Medicine Recommendation System** that predicts diseases based on user-provided symptoms. This project was developed using **React.js**, providing users with personalized recommendations such as disease predictions, workout plans, diet suggestions, medications, and precautions.
 
-## Available Scripts
+## **Table of Contents**
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## **Overview**
 
-### `npm start`
+MedInsight allows users to input their symptoms, after which the system predicts possible diseases and provides comprehensive recommendations. These recommendations include workout routines, diet plans, medications, and precautions tailored to the user's needs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The frontend is developed using **React.js**.
+- The backend API that processes predictions is hosted separately and accessed via HTTP requests.
+  
+## **Technologies Used**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React.js
+- **UI/UX**: Bootstrap for responsive design
+- **Routing**: React Router for navigation
+- **State Management**: React `useState` and `useEffect` for managing state
+- **Loading Indicators**: react-top-loading-bar for smooth user experience
+- **Icons**: Font Awesome for UI icons
+- **Deployment**: Vercel for hosting the frontend
 
-### `npm test`
+## **Features**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Symptom Input**: Users can enter symptoms, and the system returns the predicted disease.
+- **Predicted Disease**: Displays the name of the predicted disease.
+- **Detailed Information**: Includes a description of the disease, workout plans, diet, medications, and precautions.
+- **Real-Time Alerts**: Provides feedback on system operations (e.g., data fetching, errors).
+- **Responsive Design**: Built to work seamlessly across all device sizes using Bootstrap grid system.
 
-### `npm run build`
+## **Installation**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these steps to get started with the development of MedInsight:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have the following installed on your machine:
+- **Node.js** (v14.x or higher)
+- **npm** (Node Package Manager)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
