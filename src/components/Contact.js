@@ -181,7 +181,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="text-decoration-none"
                 >
-                  www.codewithali.info
+                  www.codewithzain.info
                 </Link>
               </p>
 
