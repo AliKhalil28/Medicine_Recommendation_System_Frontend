@@ -167,16 +167,16 @@ export default function Contact() {
                 <i className="fas fa-map-marker-alt"></i> Mian Channu Pakistan
               </p>
               <p>
-                <i className="fas fa-phone-alt"></i> Phone: +923060435245
+                <i className="fas fa-phone-alt"></i> Phone: +923156463904
               </p>
               <p>
-                <i className="fas fa-envelope"></i> Email: ak126pk@gmail.com
+                <i className="fas fa-envelope"></i> Email: zainzaini14pk@gmail.com
               </p>
 
               <p>
                 <i className="fas fa-globe"></i> Website:{" "}
                 <Link
-                  to="https://www.codewithali.info"
+                  to="https://www.codewithzain.info"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-decoration-none"
@@ -194,24 +194,24 @@ export default function Contact() {
               <div className="social-media">
                 <h6>Follow Us</h6>
                 <Link
-                  to="https://www.facebook.com/ali.khalil.26/"
+                  to="https://www.facebook.com/zain.zaini.485499"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="fab fa-facebook"></i>
                 </Link>
-                <Link to="https://github.com/AliKhalil28">
+                <Link to="https://github.com/AliKha28">
                   <i className="fab fa-github"></i>
                 </Link>
                 <Link
-                  to="https://www.linkedin.com/in/ali-khalil-753469285/"
+                  to="https://www.linkedi.com/in-753469285/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="fab fa-linkedin"></i>
                 </Link>
                 <Link
-                  to="https://www.instagram.com/ali.khalil.26/?hl=en"
+                  to="https://www.instagram.com/zainzaini377/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
