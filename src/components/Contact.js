@@ -204,7 +204,7 @@ export default function Contact() {
                   <i className="fab fa-github"></i>
                 </Link>
                 <Link
-                  to="https://www.linkedi.com/in-753469285/"
+                  to="https://www.linkedin.com/in/zain-ul-abideen-1bb800337/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
